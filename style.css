@@ -1,3 +1,59 @@
-* {
-    outline: 2px solid red;
+/* Hide sections initially */
+#Putaran, #Play {
+    display: none;
+}
+
+#message {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: black;
+    color: aliceblue;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Begin, .Putaran, .Play {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh; /* Ensures full viewport height */
+    text-align: center;
+}
+
+.Begin h1 {
+    font-size: 100px;
+    font-family: "Jersey 10", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Begin h3 {
+    font-size: 20px;
+}
+
+.Begin h1, .Begin h3, .Begin .Start {
+    margin: 10px 0;
+}
+
+.Start {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: transparent;
+    color: aquamarine;
+    border: 2px solid aquamarine;
+    border-radius: 25px;
+    cursor: pointer;
 }

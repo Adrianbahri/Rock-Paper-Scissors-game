@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="tst.js"></script>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <section id="Begin" class="Begin">
+        <h1>Welcome to Rock Paper Scissors Game</h1>
+        <h3>Click Button Below To Start</h3>
+        <button class="Start">Start</button>
+    </section>
+
+    <section id="Putaran" class="Putaran">
+        <h3>Masukkan Jumlah Putaran</h3>
+        <form id="putaranForm">
+            <label for="putaran">Jumlah Putaran:</label>
+            <input type="number" id="putaran" name="jumlahPutaran">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="Play" class="Play">
+        <div class="score">
+            <p id="humanScore">Human = 0</p>
+            <p id="computerScore">Computer = 0</p>
+        </div>
+        <div class="button">
+            <button class="Rock"> Rock </button>
+            <button class="Paper"> Paper </button>
+            <button class="Scissors"> Scissors </button>
+        </div>
+        <div id="message"></div>
+    </section>
+    
+    <script src="script.js"></script>
 </body>
 </html>
